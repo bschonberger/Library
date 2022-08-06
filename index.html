@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="gridContainer">
+
+        <div class="header">
+            <div class="left">
+                <div class="logo">library</div>
+            </div>
+            <div class="right">
+                <button>Log in</button>
+            </div>
+        </div>
+
+        <div class="addBook">
+
+            <button id="addBook">+ add book</button>
+
+            <div class="modal" id="modal">
+                <form onsubmit="return false" id="myForm">
+                    <span class="close">&times;</span>
+
+                    <p class="form-title">Add new book</p>
+
+                    <div class="inputText">
+                        <input type="text" name="inputTitle" id="inputTitle" placeholder="Title" class="text" required/>
+                    </div>
+
+                    <div class="inputText">
+                        <input type="text" name="inputAuthor" id="inputAuthor" placeholder="Author" class="text"r equired/>
+                    </div>
+
+                    <div class="inputText">
+                        <input type="number" name="inputPages" id="inputPages" placeholder="Pages" minlength="1" maxlength="4"  class="text" required/>
+                    </div>
+
+                    <div class="input">
+                        <label for="inputRead">Have you read it?</label>
+                        <input type="checkbox" name="inputRead" id="inputRead" />
+                    </div>
+
+                    <input type="submit" id="submit"></button>
+
+
+                </form>
+            </div>
+
+        </div>
+
+        <div class="mainContainer">
+            <div class="bookGrid" id="bookGrid">
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <script defer src="javascript.js"></script>
+</body>
+</html>
